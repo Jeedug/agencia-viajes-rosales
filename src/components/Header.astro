@@ -1,0 +1,55 @@
+---
+import { FileText, ChevronDown, MapPin, PhoneCall, Search, Menu, AtSign } from "lucide-react";
+import Services from "./Services";
+import { MdEmail } from "react-icons/md";
+
+const pathName = Astro.url.pathname
+const isContact = pathName == "/contact"
+const isAbout = pathName == "/about"
+---
+
+<header
+  class="w-full fixed h-[100px] px-10 flex flex-row gap-10 items-center justify-between font-semibold text-black bg-white z-50"
+>
+  <div
+    class="flex flex-row items-center text-[16px] font-medium gap-12 lg:gap-10 text-[#3d5092]"
+  >
+    <a href="/" class="hover:scale-105 transition">
+      <img src="/logo.webp" class="w-[92px]" />
+    </a>
+    
+    <div class="flex flex-row items-center gap-5 lg:gap-10 text-[#3d5092]">
+      <a href="/about" class="group hidden md:flex mr-2 ml-3 flex-col">
+        <div class={`hover:text-[#ef8fbb] transition ${ isAbout ? "text-[#ef8fbb]" : ""}`}>Sobre nosotros</div>
+        <figure
+          class="group-hover:bg-[#ef8fbb] w-[0px] h-[1px] scale-x-0 group-hover:w-full transition group-hover:scale-x-100"
+        >
+        </figure>
+      </a>
+      <a href="/contact" class="group hidden md:flex mr-2 flex-col">
+        <div class={`hover:text-[#ef8fbb] transition ${ isContact ? "text-[#ef8fbb]" : ""}`}>Contacto</div>
+        <figure
+          class="group-hover:bg-[#ef8fbb] w-[0px] h-[1px] scale-x-0 group-hover:w-full transition group-hover:scale-x-100"
+        >
+        </figure>
+      </a>
+      <Services client:load />
+    </div>
+  </div>
+
+  <button class="flex text-2xl p-4 rounded-full bg-gray-50 hover:bg-gray-100 flex-row md:hidden items-center justify-center gap-2">
+    <Menu className="w-6 h-6 text-xl " />
+  </button>
+
+  <div class="md:flex flex-row hidden">
+    <a href="/contact" class="hover:text-[#5186c6] flex mr-2 flex-row gap-3">
+      <AtSign className="ml- text-xl" />
+    </a>
+    <a href="/contact" class="hover:text-[#5186c6] flex mr-2 flex-row gap-3">
+      <MapPin className="ml- text-xl" />
+    </a>
+    <a href="/contact" class="hover:text-[#5186c6] flex mr-5 flex-row gap-3">
+      <PhoneCall className="ml- text-xl" />
+    </a>
+  </div>
+</header>

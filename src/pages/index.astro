@@ -1,0 +1,32 @@
+---
+import ImageMain from "../components/ImageMain.astro";
+import Promotions from "../components/Promotions";
+import ServicesExplanation from "../components/ServicesExplanation";
+import Main from "../layouts/Main.astro";
+import Request from "../components/Request";
+import PopularDestinations from "../components/PopularDestinations";
+import AboutSection from "../components/AboutSection.astro";
+import Products from "../components/Products";
+---
+
+<Main>
+  <div class=" w-full">
+
+
+    <Promotions client:load />
+
+    <!-- <ImageMain /> -->
+
+    <ServicesExplanation client:load />
+    <Request client:load />
+
+
+    <PopularDestinations client:load />
+
+    <Products client:load />
+
+    <AboutSection />
+
+
+  </div>
+</Main>
