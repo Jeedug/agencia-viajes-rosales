@@ -18,52 +18,52 @@ export default function Products() {
 
         <ul className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-6 gap-10 mt-10">
             <li className="">
-                <article className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
+                <a href="/vuelos" className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
                     <BsAirplane  />
                     <span>
                         Vuelos
                     </span>
-                </article>
+                </a>
             </li>
             <li className="">
-                <article className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
+                <a href="/cruceros" className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
                     <ShipIcon  />
                     <span>
                         Cruceros
                     </span>
-                </article>
+                </a>
             </li>
             <li className="">
-                <article className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
+                <a href="/hoteles" className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
                     <HotelIcon  />
                     <span>
                         Hoteles
                     </span>
-                </article>
+                </a>
             </li>
             <li className="">
-                <article className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
+                <a href="/promociones" className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
                     <TicketIcon  />
                     <span>
                         Promociones
                     </span>
-                </article>
+                </a>
             </li>
             <li className="">
-                <article className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
+                <a href="/paquetes" className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
                     <BoxIcon  />
                     <span>
                         Paquetes
                     </span>
-                </article>
+                </a>
             </li>
             <li className="">
-                <article className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
+                <a href="/recorridos" className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
                     <FootprintsIcon  />
                     <span>
                         Recorridos
                     </span>
-                </article>
+                </a>
             </li>
         </ul>
 

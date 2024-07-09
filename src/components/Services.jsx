@@ -47,12 +47,13 @@ export default function Services() {
                   description={"Haga reservaciones, obtenga ofertas"}
                 />
                 <LiItem
-                  route={"/promociones"}
-                  icon={<BsTicketPerforatedFill className="h-7" />}
-                  title={"Promociones"}
-                  description={"Obtenga ofertas y promociones"}
+                  route={"/recorridos"}
+                  icon={<FaWalking className="h-7" />}
+                  title={"Recorridos"}
+                  description={"Recorridos turisticos del mundo"}
                 />
                 <LiItem
+                  pink={true}
                   route={"/paquetes"}
                   icon={<FaBox className="h-7" />}
                   title={"Paquetes"}
@@ -61,10 +62,11 @@ export default function Services() {
                   }
                 />
                 <LiItem
-                  route={"/recorridos"}
-                  icon={<FaWalking className="h-7" />}
-                  title={"Recorridos"}
-                  description={"Recorridos turisticos del mundo"}
+                  pink={true}
+                  route={"/promociones"}
+                  icon={<BsTicketPerforatedFill className="h-7" />}
+                  title={"Promociones"}
+                  description={"Obtenga ofertas y promociones"}
                 />
               </ul>
             </NavigationMenuContent>
@@ -75,19 +77,36 @@ export default function Services() {
   );
 }
 
-const LiItem = ({ title, description, icon, route }) => {
-  return (
-    <li>
-      <a
-        href={route || "/"}
-        className="flex flex-col hover:bg-[#6aabff]/15 transition p-2 select-none cursor-pointer rounded-xl"
-      >
-        <div className="flex flex-row items-center gap-2">
-          {icon}
-          <span className="font-semibold">{title || ""}</span>
-        </div>
-        <span className="text-[11px] font-medium">{description || ""}</span>
-      </a>
-    </li>
-  );
+const LiItem = ({ title, description, icon, route, pink }) => {
+  if (pink) {
+    return (
+      <li>
+        <a
+          href={route || "/"}
+          className="flex flex-col text-pink-500 hover:bg-[#ff75bc]/15 transition p-2 select-none cursor-pointer rounded-xl"
+        >
+          <div className="flex flex-row items-center gap-2">
+            {icon}
+            <span className="font-semibold">{title || ""}</span>
+          </div>
+          <span className="text-[11px] font-medium">{description || ""}</span>
+        </a>
+      </li>
+    );
+  } else {
+    return (
+      <li>
+        <a
+          href={route || "/"}
+          className="flex flex-col hover:bg-[#6aabff]/15 transition p-2 select-none cursor-pointer rounded-xl"
+        >
+          <div className="flex flex-row items-center gap-2">
+            {icon}
+            <span className="font-semibold">{title || ""}</span>
+          </div>
+          <span className="text-[11px] font-medium">{description || ""}</span>
+        </a>
+      </li>
+    );
+  }
 };
