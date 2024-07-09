@@ -1,8 +1,8 @@
 {
-  "name": "grubby-giant",
+  "name": "viajes-rosale",
   "type": "module",
   "version": "0.0.1",
-  "scripts": {
+  "scripts": {s
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
