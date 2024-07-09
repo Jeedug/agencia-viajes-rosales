@@ -12,9 +12,9 @@ export default function PopularDestinations() {
         <span className=" text-[42px] text-black font-bold cursor-pointer text-black/100 select-none ">
           Obten ofertas y promociones de los lugares más populares
         </span>
-        <button className="rounded-full border px-4 py-2 text-black/100 hover:text-black transition hover:bg-gray-100 mt-10 border-gray-300">
+        <a href="/promociones" className="rounded-full border px-4 py-2 text-black/100 hover:text-black transition hover:bg-gray-100 mt-10 border-gray-300 flex items-center justify-center">
           Saber mas
-        </button>
+        </a>
       </div>
 
       <div className="py-10 px-10 w-full">

@@ -7,6 +7,8 @@ import Request from "../components/Request";
 import PopularDestinations from "../components/PopularDestinations";
 import AboutSection from "../components/AboutSection.astro";
 import Products from "../components/Products";
+import { ViewTransitions } from 'astro:transitions';
+
 ---
 
 <Main>
@@ -27,6 +29,7 @@ import Products from "../components/Products";
 
     <AboutSection />
 
+    <ViewTransitions />
 
   </div>
 </Main>

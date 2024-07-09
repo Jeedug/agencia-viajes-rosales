@@ -53,6 +53,7 @@ export default function Services() {
                   description={"Recorridos turisticos del mundo"}
                 />
                 <LiItem
+                  newOffers={"Nuevo"}
                   pink={true}
                   route={"/paquetes"}
                   icon={<FaBox className="h-7" />}
@@ -62,6 +63,7 @@ export default function Services() {
                   }
                 />
                 <LiItem
+                  newOffers={"Nuevo"}
                   pink={true}
                   route={"/promociones"}
                   icon={<BsTicketPerforatedFill className="h-7" />}
@@ -77,7 +79,7 @@ export default function Services() {
   );
 }
 
-const LiItem = ({ title, description, icon, route, pink }) => {
+const LiItem = ({ title, description, icon, route, pink, newOffers }) => {
   if (pink) {
     return (
       <li>
@@ -88,6 +90,13 @@ const LiItem = ({ title, description, icon, route, pink }) => {
           <div className="flex flex-row items-center gap-2">
             {icon}
             <span className="font-semibold">{title || ""}</span>
+            {
+              newOffers && (
+                <span className="text-[10px] px-2 font-medium text-white rounded-full bg-red-500 ">
+                  { newOffers }
+                </span>
+              )
+            }
           </div>
           <span className="text-[11px] font-medium">{description || ""}</span>
         </a>

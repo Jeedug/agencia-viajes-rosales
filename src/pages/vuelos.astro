@@ -1,29 +1,107 @@
 ---
+import Request from "../components/Request";
 import Main from "../layouts/Main.astro";
 ---
 
 <Main>
-  <div class="h-[1000px] mx-[150px]">
-    <figure class="h-[140px] w-full "></figure>
+  <div class="mb-20 mx-[150px]">
+    <figure class="h-[140px] w-full"></figure>
     <div class="flex flex-row items-start justify-between">
-      <h1 class="text-[64px] font-extrabold text-pink-700 ">Vuelos</h1>
+      <h1 class="text-[64px] font-extrabold text-pink-700">Vuelos</h1>
       <div class="ml-20 gap-5 flex flex-col">
         <span class="text-[16px] font-semibold text-gray-700">
-          Los vuelos son un medio de transporte que nos permite viajar a otros
-          lugares de forma rápida y segura. Con el fin de ofrecer una
-          experiencia de viaje más agradable, nosotros ofrecemos vuelos a todas
-          las edades y con diferentes tipos de vuelos.  Los vuelos son un medio de transporte que nos permite viajar a otros
-          lugares de forma rápida y segura. Con el fin de ofrecer una
-          experiencia de viaje más agradable, nosotros ofrecemos vuelos a todas
-          las edades y con diferentes tipos de vuelos.
+          En <strong>Viajes Rosales</strong>, nos dedicamos a transformar sus
+          sueños de viaje en realidad con nuestro servicio especializado en la
+          búsqueda de vuelos. Entendemos que cada viajero es único, por lo que
+          ofrecemos una experiencia personalizada para encontrar los vuelos que
+          mejor se adapten a sus necesidades y presupuesto. Nuestro equipo de
+          expertos se encarga de buscar y comparar opciones de vuelos en tiempo
+          real, utilizando las últimas tecnologías y herramientas del mercado.
+          Así, garantizamos que usted reciba las mejores ofertas disponibles,
+          ahorrando tiempo y dinero en la planificación de su viaje.
         </span>
         <span class="text-[16px] font-semibold text-gray-700">
-          Los vuelos son un medio de transporte que nos permite viajar a otros
-          lugares de forma rápida y segura. Con el fin de ofrecer una
-          experiencia de viaje más agradable, nosotros ofrecemos vuelos a todas
-          las edades y con diferentes tipos de vuelos.
+          Pero no nos detenemos allí. En Viajes Rosales, la satisfacción del
+          cliente es nuestra prioridad. Por ello, no solo le ofrecemos las
+          tarifas más competitivas, sino que también le proporcionamos un
+          servicio integral que incluye:
+        </span>
+        <ul class="flex flex-col gap-2 list-decimal ml-4">
+          <li class="text-[14px] font-semibold text-gray-700">
+            Asesoramiento Personalizado: Nuestros agentes están disponibles para
+            resolver cualquier duda y asesorarle en la elección del vuelo que
+            mejor se adapte a sus necesidades y preferencias.
+          </li>
+          <li class="text-[14px] font-semibold text-gray-700">
+            Transparencia y Flexibilidad: Le ofrecemos toda la información
+            detallada sobre las opciones de vuelo, incluyendo horarios, escalas,
+            y políticas de equipaje, para que pueda tomar una decisión
+            informada.
+          </li>
+          <li class="text-[14px] font-semibold text-gray-700">
+            Atención al Cliente 24/7: Estamos a su disposición en cualquier
+            momento del día, listos para asistirle en caso de cambios,
+            cancelaciones o cualquier imprevisto que pueda surgir durante su
+            viaje.
+          </li>
+        </ul>
+
+        <span class="text-[16px] font-semibold text-gray-700">
+          Con Viajes Rosales, no solo encontrará los mejores vuelos al mejor
+          precio, sino que también disfrutará de una experiencia de viaje sin
+          preocupaciones, respaldada por un equipo comprometido con su
+          satisfacción.
+        </span>
+
+        <span class="text-[16px] font-semibold text-gray-700">
+          Confíe en nosotros para encontrar el vuelo perfecto y hacer de su
+          próximo viaje una experiencia inolvidable. ¡Viaje con Viajes Rosales y
+          descubra el mundo con nosotros!
         </span>
       </div>
     </div>
   </div>
+  <Request />
 </Main>
+
+<style>
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  span {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  h1 {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  li {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  span:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  span:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+
+  span:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+
+  span:nth-child(4) {
+    animation-delay: 0.7s;
+  }
+</style>
