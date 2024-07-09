@@ -2,7 +2,7 @@
   "name": "viajes-rosales",
   "type": "module",
   "version": "0.0.1",
-  "scripts": {s
+  "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
