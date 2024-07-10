@@ -1,14 +1,18 @@
 import React, { useEffect } from "react";
 
 export default function ServicesExplanation() {
-
   return (
     <section className="flex flex-row bg-white">
       <div className="w-[50%] h-[550px] ">
-
-        <img className="w-full h-full object-cover" src="/sections/hotels.jpg" />
-
-
+        <img
+          className="w-full h-full object-cover"
+          src="/sections/hotels.jpg"
+          alt="hotels"
+          width="100%"
+          height="100%"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       <article className="flex flex-col w-[50%] gap-5 pl-20 pt-10">
         <h2 className="font-bold text-black/50 tracking-widest ">
@@ -29,14 +33,15 @@ export default function ServicesExplanation() {
           <article className="w-[50%] px-5 h-full text-md font-medium flex flex-col  text-gray-500 gap-10">
             <span className=" text-sm font-medium text-black/50 ">
               Explicación de los servicios que ofrecemos para los clientes de
-              nuestro negocio de viajes. Aplicación de los servicios que ofrecemos para los clientes de
-              nuestro negocio de viajes.Explicación de los servicios que ofrecemos para los clientes de
-              nuestro negocio de viajes.
+              nuestro negocio de viajes. Aplicación de los servicios que
+              ofrecemos para los clientes de nuestro negocio de
+              viajes.Explicación de los servicios que ofrecemos para los
+              clientes de nuestro negocio de viajes.
             </span>
             <span className=" text-sm font-medium text-black/50 ">
               Explicación de los servicios que ofrecemos para los clientes de
-              nuestro negocio de viajes Explicación de los servicios que ofrecemos para los clientes de
-              nuestro negocio de viajes.
+              nuestro negocio de viajes Explicación de los servicios que
+              ofrecemos para los clientes de nuestro negocio de viajes.
             </span>
             <span className=" text-sm font-medium text-black/50 ">
               Explicación de los servicios que ofrecemos para los clientes de

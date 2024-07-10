@@ -16,7 +16,7 @@ export default function Promotions() {
           delay: 2000,
           stopOnInteraction: false,
           stopOnMouseEnter: true,
-          active: true
+          active: true,
         }),
       ]}
       className="w-full"
@@ -25,6 +25,10 @@ export default function Promotions() {
         <CarouselItem>
           <div className="w-full h-[700px] flex items-center">
             <img
+              width="100%"
+              height="100%"
+              loading="lazy"
+              decoding="async"
               className=" w-full object-cover h-full object-center grayscale-[20%] contrast-[60%] absolute"
               src="/promotions/promotion-01.webp"
               alt="airplane flight promotion"
@@ -41,9 +45,13 @@ export default function Promotions() {
           </div>
         </CarouselItem>
         <CarouselItem>
-        <div className="w-full h-[700px] flex items-center">
+          <div className="w-full h-[700px] flex items-center">
             <img
               className=" w-full object-cover h-full object-center grayscale-[20%] contrast-[60%] absolute"
+              width="100%"
+              height="100%"
+              loading="lazy"
+              decoding="async"
               src="/promotions/promotion-02.webp"
               alt="airplane flight promotion"
             />
@@ -59,9 +67,13 @@ export default function Promotions() {
           </div>
         </CarouselItem>
         <CarouselItem>
-        <div className="w-full h-[700px] flex items-center">
+          <div className="w-full h-[700px] flex items-center">
             <img
               className=" w-full object-cover h-full object-center grayscale-[20%] contrast-[60%] absolute"
+              width="100%"
+              height="100%"
+              loading="lazy"
+              decoding="async"
               src="/promotions/promotion-03.webp"
               alt="airplane flight promotion"
             />
