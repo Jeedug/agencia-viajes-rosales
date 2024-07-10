@@ -3,7 +3,7 @@ import Main from "../layouts/Main.astro";
 import { db, Subscriptions } from "astro:db";
 
 const sub = await db.select().from(Subscriptions);
-await db.insert(Subscriptions).values({ email: "john@examplee.com" });
+await db.insert(Subscriptions).values({ email: "esto es local.com" });
 
 ---
 
