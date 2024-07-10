@@ -14,14 +14,16 @@ await db.insert(Subscriptions).values({ email: "esto es local.com" });
     <figure class="h-[140px] w-full "></figure>
     <div class="flex flex-row items-start justify-between">
       <h1 class="text-[64px] font-extrabold text-pink-700 ">Promociones</h1>
-      {
-        sub.map(({ id, email })=>{
-          return <div class="flex flex-row items-center justify-between">
-            <p>{ id }</p>
-            <p class="text-[16px] font-bold text-pink-700 ">{email}</p>
-          </div>
-        })
-      }
+      <div class="flex f">
+        {
+          sub.map(({ id, email })=>{
+            return <div class="flex flex-row items-center justify-between">
+              <p>{ id }</p>
+              <p class="text-[16px] font-bold text-pink-700 ">{email}</p>
+            </div>
+          })
+        }
+      </div>
     </div>
   </div>
 </Main>
