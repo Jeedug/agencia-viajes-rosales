@@ -2,6 +2,8 @@
 import Main from "../layouts/Main.astro";
 import { db, Subscriptions } from "astro:db";
 
+export const prerender = false;
+
 const sub = await db.select().from(Subscriptions);
 await db.insert(Subscriptions).values({ email: "esto es local.com" });
 
