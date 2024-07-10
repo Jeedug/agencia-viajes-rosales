@@ -1,6 +1,35 @@
 import React from "react";
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Request() {
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const res = await fetch("/api/subscriptions/create-subscription", {
+      method: "POST",
+      body: JSON.stringify({
+        email: data.get("email"),
+      }),
+    });
+
+    const resolved = await res.json();
+
+    if (!res.ok){
+      toast.error(resolved.message,{
+        duration: 3000,
+        position: "top-right"
+      });
+    } else {
+      toast.success(resolved.message,{
+        duration: 3000,
+        position: "top-right"
+      });
+    }
+  };
+
+
+
   return (
     <section className="flex flex-col gap-5 w-full h-[600px] items-center justify-center">
       <img
@@ -40,17 +69,19 @@ export default function Request() {
         <h2 className="text-[24px] font-extrabold tracking-tight text-white">
           Suscrbete para recibir noticias sobre nuestros viajes
         </h2>
-        <div className="flex flex-row">
+        <form method="get"  className="flex flex-row" onSubmit={(e)=>{handleSubmit(e)}}>
           <input
+            name="email"
             type="email"
             placeholder="tucorreo@gmail.com"
             className="w-full placeholder:text-white placeholder:text-white/60 text-white font-bold px-2 h-[40px] border-2 border-l-transparent border-r-transparent border-t-transparent border-white outline-none bg-transparent"
           />
-          <button className="text-white border border-white px-4 whitespace-nowrap hover:bg-white/50 transition">
+          <button type="submit" method="POST" className="text-white border border-white px-4 whitespace-nowrap hover:bg-white/50 transition">
             Recibir noticias
           </button>
-        </div>
+        </form>
       </article>
+      <Toaster />
     </section>
   );
 }
