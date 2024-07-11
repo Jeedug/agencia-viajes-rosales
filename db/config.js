@@ -32,5 +32,6 @@ const Packages = defineTable({
 export default defineDb({
   tables: {
     Subscriptions,
+    Promotions
   }
 });
