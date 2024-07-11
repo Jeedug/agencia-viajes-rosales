@@ -32,7 +32,7 @@ const rateLimit = (options) => {
   };
   
   export const limiter = rateLimit({
-    windowMs: 20 * 1000, // 1 minuto
+    windowMs: 60 * 1000, // 1 minuto
     max: 12, // Límite de 100 solicitudes por IP por ventana
   });
 
