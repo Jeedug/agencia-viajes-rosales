@@ -23,29 +23,22 @@ export default function ServicesExplanation() {
             <span className=" text-[38px] text-black font-bold cursor-pointer text-black/100 select-none">
               Reservacion de viajes.
             </span>
-            <span className=" text-[38px] text-black/50 font-bold cursor-pointer hover:text-black/100 select-none transblack">
+            <span className=" text-[38px] text-black font-bold cursor-pointer hover:text-black/100 select-none transblack">
               Visado y pasaporte.
             </span>
-            <span className="text-[38px] text-black/50 font-bold cursor-pointer transition hover:text-black/100 select-none">
+            <span className="text-[38px] text-black font-bold cursor-pointer transition hover:text-black/100 select-none">
               Paquetes y ofertas.
             </span>
           </div>
           <article className="w-[50%] px-5 h-full text-md font-medium flex flex-col  text-gray-500 gap-10">
             <span className=" text-sm font-medium text-black/50 ">
-              Explicación de los servicios que ofrecemos para los clientes de
-              nuestro negocio de viajes. Aplicación de los servicios que
-              ofrecemos para los clientes de nuestro negocio de
-              viajes.Explicación de los servicios que ofrecemos para los
-              clientes de nuestro negocio de viajes.
+              Servicio viajes a los destinos más populares en el mundo, incluyendo países de América Latina, Asia, Europa, y África.
             </span>
             <span className=" text-sm font-medium text-black/50 ">
-              Explicación de los servicios que ofrecemos para los clientes de
-              nuestro negocio de viajes Explicación de los servicios que
-              ofrecemos para los clientes de nuestro negocio de viajes.
+              Ofrecemos servicio de visado y pasaporte sin importar a dónde vayas.
             </span>
             <span className=" text-sm font-medium text-black/50 ">
-              Explicación de los servicios que ofrecemos para los clientes de
-              nuestro negocio de viajes.
+              Paquetes y ofertas para viajes a los destinos más populares en el mundo, incluyendo países de América Latina, Asia, Europa, y África.
             </span>
           </article>
         </div>

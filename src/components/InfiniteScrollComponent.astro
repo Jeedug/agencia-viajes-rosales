@@ -1,0 +1,35 @@
+<div
+  x-data="{}"
+  x-init="$nextTick(() => {
+          let ul = $refs.logos;
+          ul.insertAdjacentHTML('afterend', ul.outerHTML);
+          ul.nextSibling.setAttribute('aria-hidden', 'true');
+      })"
+  class="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+>
+  <ul
+    x-ref="logos"
+    class="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+  >
+    <li>
+      <img src="./infinite/aeromexico.svg"  alt="aeromexico" />
+    </li>
+    <li>
+        <img src="./infinite/mexicana.svg"  alt="aeromexico" />
+      </li>
+      <li>
+        <img src="./infinite/volaris.webp" class="w-[200px] h-[100px]"  alt="aeromexico" />
+      </li>
+      <li>
+        <img src="./infinite/viva.svg" class="w-[200px] h-[100px]"  alt="aeromexico" />
+      </li>
+      <li>
+        <img src="./infinite/interjet.svg" class="w-[200px] h-[100px]"  alt="aeromexico" />
+      </li>
+      <li>
+        <img src="./infinite/american.webp" class="w-[200px] h-[100px]"  alt="aeromexico" />
+      </li>
+  </ul>
+</div>
+
+

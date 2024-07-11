@@ -6,11 +6,15 @@ import Request from "../components/Request";
 import PopularDestinations from "../components/PopularDestinations";
 import AboutSection from "../components/AboutSection.astro";
 import Products from "../components/Products";
+import ImageMain from "../components/ImageMain.astro";
+import InfiniteScrollComponent from "../components/InfiniteScrollComponent.astro";
 ---
 
 <Main>
-  <div class=" w-full">
-    <Promotions client:load />
+  <div class="w-full">
+    <figure class="h-[100px]"></figure>
+    <ImageMain />
+    <InfiniteScrollComponent />
     <ServicesExplanation client:load />
     <Request client:load />
     <PopularDestinations client:load />

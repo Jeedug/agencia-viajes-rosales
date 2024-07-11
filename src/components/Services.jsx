@@ -32,25 +32,25 @@ export default function Services() {
                   route={"/vuelos"}
                   icon={<FaPlane className="h-7" />}
                   title={"Vuelos"}
-                  description={"Haga reservaciones, obtenga ofertas"}
+                  description={"Obtenga vuelos a los destinos más populares"}
                 />
                 <LiItem
                   route={"/hoteles"}
                   icon={<FaHotel className="h-7" />}
                   title={"Hoteles"}
-                  description={"Haga reservaciones, obtenga ofertas"}
+                  description={"Haga reservaciones, de los lugares más populares"}
                 />
                 <LiItem
                   route={"/cruceros"}
                   icon={<MdDirectionsBoat className="h-7" />}
                   title={"Cruceros"}
-                  description={"Haga reservaciones, obtenga ofertas"}
+                  description={"Obtenga cruceros a los destinos más populares"}
                 />
                 <LiItem
                   route={"/recorridos"}
                   icon={<FaWalking className="h-7" />}
                   title={"Recorridos"}
-                  description={"Recorridos turisticos del mundo"}
+                  description={"Recorridos a los destinos turisticos mas populares"}
                 />
                 <LiItem
                   newOffers={"Nuevo"}

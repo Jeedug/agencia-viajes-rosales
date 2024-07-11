@@ -3,6 +3,9 @@ import { Carousel, CarouselContent, CarouselItem } from "../shadcdn/Carousel";
 import Autoplay from "embla-carousel-autoplay";
 
 export default function PopularDestinations() {
+
+
+
   return (
     <section className="h-[600px] w-full flex flex-row">
       <div className=" h-full pl-16 py-12 pr-10 flex flex-col">

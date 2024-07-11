@@ -3,36 +3,45 @@ import Request from "../components/Request";
 import Main from "../layouts/Main.astro";
 ---
 
+
+
 <Main>
-  <div class="h-[1000px] mx-[150px]">
-    <figure class="h-[140px] w-full "></figure>
-    <div class="flex flex-row items-start justify-between">
-      <h1 class="text-[64px] font-extrabold text-pink-700 ">Cruceros</h1>
+  <img class="absolute inset-0 w-full h-full object-cover z-0 filter blur-sm" src="./sections/cruises.webp" alt="Cruceros" />  
+  <figure class="h-[100px]"></figure>
+  <div class="relative mx-[150px]">
+    <div class="relative z-10 flex flex-row items-start justify-between p-10 bg-opacity-50">
+      <h1 class="text-[64px] font-extrabold text-white">Cruceros</h1>
       <div class="ml-20 gap-5 flex flex-col">
-        <span class="text-[16px] font-semibold text-gray-700">
-          Los vuelos son un medio de transporte que nos permite viajar a otros
-          lugares de forma rápida y segura. Con el fin de ofrecer una
-          experiencia de viaje más agradable, nosotros ofrecemos vuelos a todas
-          las edades y con diferentes tipos de vuelos.  Los vuelos son un medio de transporte que nos permite viajar a otros
-          lugares de forma rápida y segura. Con el fin de ofrecer una
-          experiencia de viaje más agradable, nosotros ofrecemos vuelos a todas
-          las edades y con diferentes tipos de vuelos.
+        <span class="text-[16px] font-semibold text-white">
+          En <strong>Viajes Rosales</strong> nos dedicamos a transformar sus
+          sueños de viaje en realidad con nuestros servicios especializados en
+          la búsqueda de cruceros. Entendemos que cada viajero es único,
+          por lo que ofrecemos una experiencia personalizada para encontrar
+          los cruceros que mejor se adapten a sus necesidades y presupuesto.
         </span>
-        <span class="text-[16px] font-semibold text-gray-700">
-          Los vuelos son un medio de transporte que nos permite viajar a otros
-          lugares de forma rápida y segura. Con el fin de ofrecer una
-          experiencia de viaje más agradable, nosotros ofrecemos vuelos a todas
-          las edades y con diferentes tipos de vuelos.
+        <h2 class="text-[18px] font-semibold text-white">
+          Selección de Cruceros
+        </h2>
+        <span class="text-[16px] font-semibold text-white">
+          En Viajes Rosales, nos encargamos de buscar los cruceros más adecuados para su viaje. Trabajamos con una amplia variedad de compañías navieras para ofrecerle opciones que se ajusten a su estilo de viaje y preferencias. Ya sea que prefiera cruceros de lujo, familiares o temáticos, estamos aquí para asegurarnos de que tenga una experiencia excepcional en el mar.
         </span>
+        <h2 class="text-[18px] font-semibold text-white">
+          Nuestro Servicio Integral
+        </h2> 
+        <span class="text-[16px] font-semibold text-white">
+          En Viajes Rosales, la satisfacción del cliente es nuestra prioridad.
+          Por ello, no solo le ofrecemos las mejores opciones en cruceros,
+          sino que también le proporcionamos un servicio integral que
+          incluye asistencia personalizada durante todo el proceso.
+        </span>
+
       </div>
     </div>
   </div>
   <Request client:load />
 </Main>
 
-
 <style>
-
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -43,32 +52,37 @@ import Main from "../layouts/Main.astro";
       transform: translateY(0);
     }
   }
-  
+
   span {
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
   }
-  
+
   h1 {
     animation: fadeInUp 1s ease forwards;
   }
-  
+
+  h2 {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  li {
+    animation: fadeInUp 1s ease forwards;
+  }
+
   span:nth-child(1) {
     animation-delay: 0.1s;
   }
-  
+
   span:nth-child(2) {
     animation-delay: 0.3s;
   }
-  
+
   span:nth-child(3) {
     animation-delay: 0.5s;
   }
-  
+
   span:nth-child(4) {
     animation-delay: 0.7s;
   }
-  
-  
-  
-  </style>
+</style>

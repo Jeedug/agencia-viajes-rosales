@@ -2,66 +2,38 @@
 import Request from "../components/Request";
 import Main from "../layouts/Main.astro";
 ---
-
 <Main>
-  <div class="mb-20 mx-[150px]">
-    <figure class="h-[140px] w-full"></figure>
-    <div class="flex flex-row items-start justify-between">
-      <h1 class="text-[64px] font-extrabold text-pink-700">Vuelos</h1>
+  <img class="absolute inset-0 w-full h-full object-cover z-0 filter blur-sm" src="./sections/flights.webp" alt="Vuelos" />  
+  <figure class="h-[100px]"></figure>
+  <div class="relative mx-[150px] pb-16">
+    <div class="relative z-10 flex  flex-row items-start justify-between p-10 bg-opacity-50">
+      <h1 class="text-[64px] font-extrabold text-white">Vuelos</h1>
       <div class="ml-20 gap-5 flex flex-col">
-        <span class="text-[16px] font-semibold text-gray-700">
-          En <strong>Viajes Rosales</strong>, nos dedicamos a transformar sus
-          sueños de viaje en realidad con nuestro servicio especializado en la
-          búsqueda de vuelos. Entendemos que cada viajero es único, por lo que
-          ofrecemos una experiencia personalizada para encontrar los vuelos que
-          mejor se adapten a sus necesidades y presupuesto. Nuestro equipo de
-          expertos se encarga de buscar y comparar opciones de vuelos en tiempo
-          real, utilizando las últimas tecnologías y herramientas del mercado.
-          Así, garantizamos que usted reciba las mejores ofertas disponibles,
-          ahorrando tiempo y dinero en la planificación de su viaje.
+        <span class="text-[16px] font-semibold text-white">
+          En <strong>Viajes Rosales</strong> nos dedicamos a transformar sus
+          sueños de viaje en realidad con nuestros servicios especializados en
+          la búsqueda de vuelos. Entendemos que cada viajero es único,
+          por lo que ofrecemos una experiencia personalizada para encontrar
+          los vuelos que mejor se adapten a sus necesidades y presupuesto.
         </span>
-        <span class="text-[16px] font-semibold text-gray-700">
-          Pero no nos detenemos allí. En Viajes Rosales, la satisfacción del
-          cliente es nuestra prioridad. Por ello, no solo le ofrecemos las
-          tarifas más competitivas, sino que también le proporcionamos un
-          servicio integral que incluye:
+        <h2 class="text-[18px] font-semibold text-white">
+          Búsqueda de Vuelos
+        </h2>
+        <span class="text-[16px] font-semibold text-white">
+          En Viajes Rosales, nos encargamos de buscar los vuelos más convenientes para su viaje. Trabajamos con una amplia red de aerolíneas para ofrecerle una variedad de opciones que se adapten a su itinerario y preferencias. Ya sea que busque vuelos directos, vuelos con escalas, o cualquier otra opción, nos aseguramos de que encuentre el vuelo perfecto para su destino.
         </span>
-        <ul class="flex flex-col gap-2 list-decimal ml-4">
-          <li class="text-[14px] font-semibold text-gray-700">
-            Asesoramiento Personalizado: Nuestros agentes están disponibles para
-            resolver cualquier duda y asesorarle en la elección del vuelo que
-            mejor se adapte a sus necesidades y preferencias.
-          </li>
-          <li class="text-[14px] font-semibold text-gray-700">
-            Transparencia y Flexibilidad: Le ofrecemos toda la información
-            detallada sobre las opciones de vuelo, incluyendo horarios, escalas,
-            y políticas de equipaje, para que pueda tomar una decisión
-            informada.
-          </li>
-          <li class="text-[14px] font-semibold text-gray-700">
-            Atención al Cliente 24/7: Estamos a su disposición en cualquier
-            momento del día, listos para asistirle en caso de cambios,
-            cancelaciones o cualquier imprevisto que pueda surgir durante su
-            viaje.
-          </li>
-        </ul>
-
-        <span class="text-[16px] font-semibold text-gray-700">
-          Con Viajes Rosales, no solo encontrará los mejores vuelos al mejor
-          precio, sino que también disfrutará de una experiencia de viaje sin
-          preocupaciones, respaldada por un equipo comprometido con su
-          satisfacción.
-        </span>
-
-        <span class="text-[16px] font-semibold text-gray-700">
-          Confíe en nosotros para encontrar el vuelo perfecto y hacer de su
-          próximo viaje una experiencia inolvidable. ¡Viaje con Viajes Rosales y
-          descubra el mundo con nosotros!
+        <h2 class="text-[18px] font-semibold text-white">
+          Nuestro Servicio Integral
+        </h2>
+        <span class="text-[16px] font-semibold text-white">
+          En Viajes Rosales, la satisfacción del cliente es nuestra prioridad.
+          Por ello, no solo le ofrecemos las tarifas más competitivas en vuelos,
+          sino que también le proporcionamos un servicio integral de atencion al cliente que incluye servicio al cliente.
         </span>
       </div>
     </div>
   </div>
-  <Request  client:load />
+  <Request client:load />
 </Main>
 
 <style>
@@ -82,6 +54,10 @@ import Main from "../layouts/Main.astro";
   }
 
   h1 {
+    animation: fadeInUp 1s ease forwards;
+  }
+
+  h2 {
     animation: fadeInUp 1s ease forwards;
   }
 
