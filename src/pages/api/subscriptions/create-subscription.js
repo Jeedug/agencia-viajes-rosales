@@ -1,9 +1,17 @@
 import validator from "validator";
 import { db, like, Subscriptions } from "astro:db";
+import { limiter } from "../../../lib/rateLimiter";
+
 
 export const prerender = false;
 
 export const POST = async ({ request }) => {
+
+  const rateLimitResponse = await limiter(request);
+  if (rateLimitResponse) {
+    return rateLimitResponse;
+  }
+
   try {
     const data = await request.json();
     const email = data.email;
@@ -15,7 +23,7 @@ export const POST = async ({ request }) => {
           message: "Correo no ingresado",
         }),
         {
-          status: 404,
+          status: 400,
         }
       );
     }
@@ -27,7 +35,7 @@ export const POST = async ({ request }) => {
           message: "El correo no es valido",
         }),
         {
-          status: 404,
+          status: 400,
         }
       );
     }
@@ -43,7 +51,7 @@ export const POST = async ({ request }) => {
           message: "El correo ya esta suscrito",
         }),
         {
-          status: 404,
+          status: 400,
         }
       );
     }
@@ -62,7 +70,7 @@ export const POST = async ({ request }) => {
         message: "Internal server error",
       }),
       {
-        status: 404,
+        status: 400,
       }
     );
   }

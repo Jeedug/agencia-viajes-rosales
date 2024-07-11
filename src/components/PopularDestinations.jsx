@@ -34,7 +34,7 @@ export default function PopularDestinations() {
         >
           <CarouselContent className="h-full w-full gap-[20px]">
             <CarouselItem className="h-full basis-1/2 lg:basis-1/3">
-              <article className="bg-black w-[400px] h-[500px] border flex flex-col relative group">
+              <article className=" w-[400px] h-[500px] border flex flex-col relative group">
                 <img
                   className="w-[400px] h-full object-cover object-center "
                   src="/sections/paris.jpg"
@@ -55,7 +55,7 @@ export default function PopularDestinations() {
               </article>
             </CarouselItem>
             <CarouselItem className="h-full basis-1/2 lg:basis-1/3">
-              <article className="bg-black w-[400px] h-[500px] border flex flex-col relative group">
+              <article className=" w-[400px] h-[500px] border flex flex-col relative group">
                 <img
                   className="w-[400px] h-full object-cover object-center "
                   src="/sections/cancun.jpg"
@@ -76,7 +76,7 @@ export default function PopularDestinations() {
               </article>
             </CarouselItem>
             <CarouselItem className="h-full basis-1/2 lg:basis-1/3">
-              <article className="bg-black w-[400px] h-[500px] border flex flex-col relative group">
+              <article className=" w-[400px] h-[500px] border flex flex-col relative group">
                 <img
                   className="w-[400px] h-full object-cover object-center "
                   src="/sections/londres.jpg"

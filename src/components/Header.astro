@@ -35,17 +35,6 @@ const isAbout = pathName == "/about";
         >
         </figure>
       </a>
-      <a href="/contact" class="group hidden md:flex mr-2 flex-col">
-        <div
-          class={`hover:text-[#ef8fbb] transition ${isContact ? "text-[#ef8fbb]" : ""}`}
-        >
-          Contacto
-        </div>
-        <figure
-          class="group-hover:bg-[#ef8fbb] w-[0px] h-[1px] scale-x-0 group-hover:w-full transition group-hover:scale-x-100"
-        >
-        </figure>
-      </a>
       <Services client:load />
     </div>
   </div>

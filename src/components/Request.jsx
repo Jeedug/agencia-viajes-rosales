@@ -31,7 +31,7 @@ export default function Request() {
 
 
   return (
-    <section className="flex flex-col gap-5 w-full h-[600px] items-center justify-center">
+    <section id="contact"  className="flex flex-col gap-5 w-full h-[600px] items-center justify-center">
       <img
         className="w-full h-[600px] object-cover absolute contrast-[80%]"
         src="/sections/request.jpg"
@@ -69,14 +69,14 @@ export default function Request() {
         <h2 className="text-[24px] font-extrabold tracking-tight text-white">
           Suscrbete para recibir noticias sobre nuestros viajes
         </h2>
-        <form method="get"  className="flex flex-row" onSubmit={(e)=>{handleSubmit(e)}}>
+        <form className="flex flex-row" onSubmit={handleSubmit}>
           <input
             name="email"
             type="email"
             placeholder="tucorreo@gmail.com"
             className="w-full placeholder:text-white placeholder:text-white/60 text-white font-bold px-2 h-[40px] border-2 border-l-transparent border-r-transparent border-t-transparent border-white outline-none bg-transparent"
           />
-          <button type="submit" method="POST" className="text-white border border-white px-4 whitespace-nowrap hover:bg-white/50 transition">
+          <button type="submit" className="text-white border border-white px-4 whitespace-nowrap hover:bg-white/50 transition">
             Recibir noticias
           </button>
         </form>
