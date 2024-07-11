@@ -3,11 +3,21 @@ import Main from "../layouts/Main.astro";
 ---
 
 <Main>
-  <div class="">
-    <img class="h-full w-full object-contain" src="about.webp" alt="Buildings" />
+  <div class="relative h-screen">
+    <img class="absolute grayscale-[20%] contrast-[60%] inset-0 w-full h-full object-cover z-0 filter blur-sm " src="about.webp" alt="Buildings" />
+    
+    <div class="relative z-10 flex flex-col items-center pt-40 h-full">
+      <h1 class="text-white text-[64px] font-bold">Sobre nosotros</h1>
+      <p class="text-white text-md mx-20 ">
+        Nosotros trabajamos de acuerdo a las necesidades y deseos de nuestros clientes para recomendarles y asesorarlos en sus viajes. Muchas personas no tienen conocimiento sobre los mejores lugares para visitar durante su estancia, ya que los gustos varían y a veces eligen destinos que no se adaptan a sus necesidades. Una vez que nuestros clientes tienen claro lo que quieren, les presentamos varios destinos y precios para que elijan el que mejor se ajuste a su presupuesto.
 
+        En Piedras Negras, la mayoría de las personas prefieren viajar a las playas, siendo Cancún, Puerto Vallarta y Mazatlán los destinos más populares. Ofrecemos cruceros de todas las navieras disponibles en el mercado y nuestras promociones están vigentes todo el año, excepto durante los puentes, Semana Santa, Navidad y Año Nuevo, cuando los precios suelen ser más altos.
+        
+        Vendemos tours en México y en cualquier país que deseen visitar. Además, podemos gestionar visas para aquellos países que lo requieran, siempre y cuando se cumplan con los requisitos necesarios.
+        
+        Ofrecemos paquetes para México y cualquier destino internacional que deseen visitar.
 
-
-
+      </p>
+    </div>
   </div>
 </Main>
