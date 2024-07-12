@@ -23,8 +23,17 @@ const Packages = defineTable({
     id: column.number({ primaryKey: true }),
     name: column.text(),
     description: column.text(),
+    items: column.json(),
     image: column.text(),
     price: column.number(),
+    discount: column.number({ optional: true }),
+  }
+});
+
+const AdminKeys = defineTable({
+  columns: {
+    id: column.number({ primaryKey: true }),
+    key: column.text(),
   }
 });
 
@@ -32,6 +41,7 @@ const Packages = defineTable({
 export default defineDb({
   tables: {
     Subscriptions,
-    Promotions
+    Promotions,
+    Packages,
   }
 });

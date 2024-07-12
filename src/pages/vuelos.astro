@@ -3,36 +3,32 @@ import Request from "../components/Request";
 import Main from "../layouts/Main.astro";
 ---
 <Main>
-  <img class="absolute inset-0 w-full h-full object-cover z-0 filter blur-sm" src="/sections/flights.webp" alt="Vuelos" />  
-  <figure class="h-[100px]"></figure>
-  <div class="relative mx-[150px] pb-16">
-    <div class="relative z-10 flex  flex-row items-start justify-between p-10 bg-opacity-50">
-      <h1 class="text-[64px] font-extrabold text-white">Vuelos</h1>
-      <div class="ml-20 gap-5 flex flex-col">
-        <span class="text-[16px] font-semibold text-white">
-          En <strong>Viajes Rosales</strong> nos dedicamos a transformar sus
-          sueños de viaje en realidad con nuestros servicios especializados en
-          la búsqueda de vuelos. Entendemos que cada viajero es único,
-          por lo que ofrecemos una experiencia personalizada para encontrar
-          los vuelos que mejor se adapten a sus necesidades y presupuesto.
-        </span>
-        <h2 class="text-[18px] font-semibold text-white">
-          Búsqueda de Vuelos
-        </h2>
-        <span class="text-[16px] font-semibold text-white">
-          En Viajes Rosales, nos encargamos de buscar los vuelos más convenientes para su viaje. Trabajamos con una amplia red de aerolíneas para ofrecerle una variedad de opciones que se adapten a su itinerario y preferencias. Ya sea que busque vuelos directos, vuelos con escalas, o cualquier otra opción, nos aseguramos de que encuentre el vuelo perfecto para su destino.
-        </span>
-        <h2 class="text-[18px] font-semibold text-white">
-          Nuestro Servicio Integral
-        </h2>
-        <span class="text-[16px] font-semibold text-white">
-          En Viajes Rosales, la satisfacción del cliente es nuestra prioridad.
-          Por ello, no solo le ofrecemos las tarifas más competitivas en vuelos,
-          sino que también le proporcionamos un servicio integral de atencion al cliente que incluye servicio al cliente.
-        </span>
+  <img class="absolute inset-0 w-full h-full object-cover z-0 filter blur-sm" src="/sections/flights.webp" alt="Vuelos" />
+    <figure class="h-[100px]"></figure>
+    <div class="relative mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-64 pb-16">
+      <div class="relative z-10 flex flex-col lg:flex-row items-start justify-between p-6 sm:p-10 bg-opacity-50 bg-gray-800 rounded-lg shadow-lg">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 lg:mb-0">Vuelos</h1>
+        <div class="ml-0 lg:ml-20 gap-5 flex flex-col text-white">
+          <span class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold">
+            En <strong>Viajes Rosales</strong> nos dedicamos a transformar sus
+            sueños de viaje en realidad con nuestros servicios especializados en
+            la búsqueda de vuelos. Entendemos que cada viajero es único,
+            por lo que ofrecemos una experiencia personalizada para encontrar
+            los vuelos que mejor se adapten a sus necesidades y presupuesto.
+          </span>
+          <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">Búsqueda de Vuelos</h2>
+          <span class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold">
+            En Viajes Rosales, nos encargamos de buscar los vuelos más convenientes para su viaje. Trabajamos con una amplia red de aerolíneas para ofrecerle una variedad de opciones que se adapten a su itinerario y preferencias. Ya sea que busque vuelos directos, vuelos con escalas, o cualquier otra opción, nos aseguramos de que encuentre el vuelo perfecto para su destino.
+          </span>
+          <h2 class="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold">Nuestro Servicio Integral</h2>
+          <span class="text-sm sm:text-base md:text-lg lg:text-xl font-semibold">
+            En Viajes Rosales, la satisfacción del cliente es nuestra prioridad.
+            Por ello, no solo le ofrecemos las tarifas más competitivas en vuelos,
+            sino que también le proporcionamos un servicio integral de atención al cliente que incluye servicio al cliente.
+          </span>
+        </div>
       </div>
     </div>
-  </div>
   <Request client:load />
 </Main>
 

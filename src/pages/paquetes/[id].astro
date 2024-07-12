@@ -1,0 +1,41 @@
+
+---
+import Request from "../../components/Request";
+import Main from "../../layouts/Main.astro";
+import { db, Packages, like } from "astro:db";
+
+
+export const prerender = false;
+
+const id = Astro.params.id;
+
+const query = await db.select().from(Packages).where(
+    like(Packages.id, id)
+);
+
+
+const currentPackage = query[0]
+
+---
+
+
+<Main>
+
+    <figure class="h-[100px] w-full"></figure>
+    <section class=" mx-[200px] p-4">
+        <h1 class="text-3xl font-bold mb-4">{currentPackage.name}</h1>
+        <img class="w-full h-[400px] object-cover rounded mb-4" src={currentPackage.image} alt={currentPackage.name} />
+        <p class="text-lg mb-4">{currentPackage.description}</p>
+        <ul class="list-none list-inside mb-4">
+          {currentPackage.items.map((item, index) => (
+            <li key={index} class="mb-1 text-gray-700 text-[14px]">{item}</li>
+          ))}
+        </ul>
+        <p class="text-xl font-semibold mb-2">Precio: <span class="text-green-600">${currentPackage.price.toLocaleString('es-MX')}</span></p>
+        {currentPackage.discount && (
+          <p class="text-xl font-semibold text-red-600">Descuento: {currentPackage.discount}%</p>
+        )}
+      </section>
+
+    <Request client:load />
+</Main>
