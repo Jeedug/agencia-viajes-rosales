@@ -9,11 +9,6 @@ import db from "@astrojs/db";
 // https://astro.build/config
 export default defineConfig({
   output: 'hybrid',
-  server: {
-		headers: {
-			"Access-Control-Allow-Origin": "*"
-		}
-	},
   adapter: netlify(),
   integrations: [tailwind(), react(), db()]
 });
