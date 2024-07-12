@@ -16,7 +16,10 @@ export const POST = async ({ request }) => {
       }),
       {
         status: 400,
-        
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       }
     );
   }
@@ -34,6 +37,10 @@ export const POST = async ({ request }) => {
         }),
         {
           status: 404,
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
         }
       );
     }
@@ -49,6 +56,10 @@ export const POST = async ({ request }) => {
       }),
       {
         status: 200,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       }
     );
   } catch (e) {
@@ -59,6 +70,10 @@ export const POST = async ({ request }) => {
       }),
       {
         status: 500,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
       }
     );
   }
