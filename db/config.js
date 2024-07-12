@@ -43,5 +43,6 @@ export default defineDb({
     Subscriptions,
     Promotions,
     Packages,
+    AdminKeys
   }
 });

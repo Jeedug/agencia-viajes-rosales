@@ -12,4 +12,8 @@ declare module 'astro:db' {
 		"Packages",
 		{"id":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"id","collection":"Packages","primaryKey":true}},"name":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"name","collection":"Packages","primaryKey":false,"optional":false}},"description":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"description","collection":"Packages","primaryKey":false,"optional":false}},"items":{"type":"json","schema":{"optional":false,"unique":false,"deprecated":false,"name":"items","collection":"Packages"}},"image":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"image","collection":"Packages","primaryKey":false,"optional":false}},"price":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"price","collection":"Packages","primaryKey":false,"optional":false}},"discount":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"discount","collection":"Packages","primaryKey":false,"optional":true}}}
 	>;
+	export const AdminKeys: import("@astrojs/db/runtime").Table<
+		"AdminKeys",
+		{"id":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"id","collection":"AdminKeys","primaryKey":true}},"key":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"key","collection":"AdminKeys","primaryKey":false,"optional":false}}}
+	>;
 }
