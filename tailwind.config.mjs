@@ -8,13 +8,13 @@ export default {
 			},
 			animation: {
 				'infinite-scroll': 'infinite-scroll 25s linear infinite',
-			  },
-			  keyframes: {
+			},
+			keyframes: {
 				'infinite-scroll': {
 				  from: { transform: 'translateX(0)' },
 				  to: { transform: 'translateX(-100%)' },
 				}
-			  }      
+			}      
 		},
 	},
 	plugins: [],
