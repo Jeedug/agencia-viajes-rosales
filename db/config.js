@@ -4,6 +4,7 @@ const Subscriptions = defineTable({
   columns: {
     id: column.number({ primaryKey: true }),
     email: column.text(),
+    blocked: column.boolean(),
   }
 });
 

@@ -10,6 +10,7 @@ export default function Request() {
       method: "POST",
       body: JSON.stringify({
         email: data.get("email"),
+        blocked: false,
       }),
     });
 

@@ -2,7 +2,7 @@
 declare module 'astro:db' {
 	export const Subscriptions: import("@astrojs/db/runtime").Table<
 		"Subscriptions",
-		{"id":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"id","collection":"Subscriptions","primaryKey":true}},"email":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"email","collection":"Subscriptions","primaryKey":false,"optional":false}}}
+		{"id":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"id","collection":"Subscriptions","primaryKey":true}},"email":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"email","collection":"Subscriptions","primaryKey":false,"optional":false}},"blocked":{"type":"boolean","schema":{"optional":false,"unique":false,"deprecated":false,"name":"blocked","collection":"Subscriptions"}}}
 	>;
 	export const Promotions: import("@astrojs/db/runtime").Table<
 		"Promotions",
