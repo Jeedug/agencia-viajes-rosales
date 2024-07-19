@@ -38,12 +38,22 @@ const AdminKeys = defineTable({
   }
 });
 
+const Clients = defineTable({
+  columns: {
+    id: column.number({ primaryKey: true }),
+    name: column.text(),
+    email: column.text(),
+    phone: column.text()
+  }
+});
+
 
 export default defineDb({
   tables: {
     Subscriptions,
     Promotions,
     Packages,
-    AdminKeys
+    AdminKeys,
+    Clients
   }
 });
