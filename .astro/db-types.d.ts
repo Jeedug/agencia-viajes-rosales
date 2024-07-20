@@ -16,4 +16,12 @@ declare module 'astro:db' {
 		"AdminKeys",
 		{"id":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"id","collection":"AdminKeys","primaryKey":true}},"key":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"key","collection":"AdminKeys","primaryKey":false,"optional":false}}}
 	>;
+	export const Clients: import("@astrojs/db/runtime").Table<
+		"Clients",
+		{"id":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"id","collection":"Clients","primaryKey":true}},"name":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"name","collection":"Clients","primaryKey":false,"optional":false}},"email":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"email","collection":"Clients","primaryKey":false,"optional":false}},"phone":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"phone","collection":"Clients","primaryKey":false,"optional":false}}}
+	>;
+	export const Images: import("@astrojs/db/runtime").Table<
+		"Images",
+		{"id":{"type":"number","schema":{"unique":false,"deprecated":false,"name":"id","collection":"Images","primaryKey":true}},"image":{"type":"text","schema":{"unique":false,"deprecated":false,"name":"image","collection":"Images","primaryKey":false,"optional":false}}}
+	>;
 }

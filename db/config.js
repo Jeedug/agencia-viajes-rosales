@@ -47,6 +47,13 @@ const Clients = defineTable({
   }
 });
 
+const Images = defineTable({
+  columns: {
+    id: column.number({ primaryKey: true }),
+    image: column.text(),
+  }
+});
+
 
 export default defineDb({
   tables: {
@@ -54,6 +61,7 @@ export default defineDb({
     Promotions,
     Packages,
     AdminKeys,
-    Clients
+    Clients,
+    Images
   }
 });
