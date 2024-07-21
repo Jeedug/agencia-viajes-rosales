@@ -1,4 +1,4 @@
-import { db, AdminKeys, like, Images } from "astro:db";
+import { db, AdminKeys, like, Images, eq } from "astro:db";
 
 export const prerender = false;
 
@@ -33,12 +33,11 @@ export const POST = async ({ request }) => {
       );
     }
 
-    const images = await db.delete().from(Images).where(eq(Images.id, id))
+    await db.delete(Images).where(eq(Images.id, id));
 
     return new Response(
       JSON.stringify({
-        message: "Imagen subida",
-        images: images,
+        message: "Image deleteed",
       }),
       {
         status: 200,
