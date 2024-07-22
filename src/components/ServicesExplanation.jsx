@@ -38,7 +38,7 @@ export default function ServicesExplanation() {
               Ofrecemos servicio de visado y pasaporte sin importar a dónde vayas.
             </span>
             <span className=" text-sm font-medium text-black/50 ">
-              Paquetes y ofertas para viajes a los destinos más populares en el mundo, incluyendo países de América Latina, Asia, Europa, y África.
+              Paquetes y ofertas para viajes a los destinos más populares en el mundo, in cluyendo países de América Latina, Asia, Europa, y África.
             </span>
           </article>
         </div>
