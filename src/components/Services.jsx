@@ -62,14 +62,6 @@ export default function Services() {
                     "Informacion y orientacion en la compra de sus paquetes vacacionales"
                   }
                 />
-                <LiItem
-                  newOffers={"Nuevo"}
-                  pink={true}
-                  route={"/promociones"}
-                  icon={<BsTicketPerforatedFill className="h-7" />}
-                  title={"Promociones"}
-                  description={"Obtenga ofertas y promociones"}
-                />
               </ul>
             </NavigationMenuContent>
           </NavigationMenuItem>

@@ -31,7 +31,10 @@ const currentPackage = query[0]
             <li key={index} class="mb-1 text-gray-700 text-[14px]">{item}</li>
           ))}
         </ul>
-        <p class="text-xl font-semibold mb-2">Precio: <span class="text-green-600">${currentPackage.price.toLocaleString('es-MX')}</span></p>
+        <p>
+          Los precios de los paquetes pueden estar dispuestos a cambios.
+        </p>
+        <p class="text-xl font-semibold mb-2">Precio desde: <span class="text-green-600">${currentPackage.price.toLocaleString('es-MX')}</span></p>
         {currentPackage.discount && (
           <p class="text-xl font-semibold text-red-600">Descuento: {currentPackage.discount}%</p>
         )}

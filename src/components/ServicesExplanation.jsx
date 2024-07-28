@@ -19,12 +19,12 @@ export default function ServicesExplanation() {
           NUESTROS SERVICIOS
         </h2>
         <div className="h-full flex flex-row">
-          <div className="flex flex-col gap-6 w-[40%] items-center h-full">
+          <div className="flex flex-col gap-6 w-[40%] items-start h-full">
             <span className=" text-[38px] text-black font-bold cursor-pointer text-black/100 select-none">
               Reservacion de viajes.
             </span>
-            <span className=" text-[38px] text-black font-bold cursor-pointer hover:text-black/100 select-none transblack">
-              Visado y pasaporte.
+            <span className=" text-[38px] text-black font-bold cursor-pointer hover:text-black/100 select-none transblack ">
+              Visas.
             </span>
             <span className="text-[38px] text-black font-bold cursor-pointer transition hover:text-black/100 select-none">
               Paquetes y ofertas.
@@ -32,13 +32,13 @@ export default function ServicesExplanation() {
           </div>
           <article className="w-[50%] px-5 h-full text-md font-medium flex flex-col  text-gray-500 gap-10">
             <span className=" text-sm font-medium text-black/50 ">
-              Servicio viajes a los destinos más populares en el mundo, incluyendo países de América Latina, Asia, Europa, y África.
+              Servicio de viajes nacionales e internacionales, incluyendo países de América Latina, Asia, Europa, y África.
             </span>
             <span className=" text-sm font-medium text-black/50 ">
-              Ofrecemos servicio de visado y pasaporte sin importar a dónde vayas.
+              Ofrecemos servicio de visas sin importar a dónde vayas.
             </span>
             <span className=" text-sm font-medium text-black/50 ">
-              Paquetes y ofertas para viajes a los destinos más populares en el mundo, in cluyendo países de América Latina, Asia, Europa, y África.
+              Paquetes y ofertas para viajes a los destinos más populares en el mundo,
             </span>
           </article>
         </div>

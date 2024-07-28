@@ -42,14 +42,6 @@ export default function Products() {
                 </a>
             </li>
             <li className="">
-                <a href="/promociones" className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
-                    <TicketIcon  />
-                    <span>
-                        Promociones
-                    </span>
-                </a>
-            </li>
-            <li className="">
                 <a href="/paquetes" className="p-10 border rounded-2xl shadow-sm transition cursor-pointer hover:shadow-lg flex flex-col font-bold text-[24px] items-center justify-center">
                     <BoxIcon  />
                     <span>

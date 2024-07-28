@@ -35,7 +35,7 @@ export default function Request() {
     <section id="contact"  className="flex flex-col gap-5 w-full h-[600px] items-center justify-center">
       <img
         className="w-full h-[600px] object-cover absolute contrast-[80%]"
-        src="/sections/request.jpg"
+        src="/sections/request.webp"
         alt="building of a hotel"
         width="100%"
         height="100%"
